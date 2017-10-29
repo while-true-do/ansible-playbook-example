@@ -1,0 +1,5 @@
+---
+# Install some packages from ansible galaxy
+- src: while-true-do.hostname
+- src: while-true-do.time
+- src: while-true-do.yum

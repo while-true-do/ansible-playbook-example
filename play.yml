@@ -1,0 +1,7 @@
+---
+- hosts: servers
+  become: yes
+  roles:
+    - while-true-do.hostname
+    - while-true-do.time
+    - while-true-do.yum
