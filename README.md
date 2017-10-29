@@ -43,13 +43,15 @@ or
 192.168.0.203
 ```
 
-### Call the playbook with you inventory file
+### Call the playbook with your inventory file
 
 ```
 ansible-playbook -i inventory/servers
 ```
 
-If you are in the need of sudo add "-K" or for a password auth add "-k" like:
+The below parameters can be used:
+- sudo password = "-K"
+- login password = "-k"
 
 ```
 ansible-playbook -k -K -i inventory/servers
