@@ -1,0 +1,4 @@
+---
+# group_vars/servers.yml
+# This file can contain variables/parameters for the servers-group
+# defined in your inventory file ( [group] )

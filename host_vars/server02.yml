@@ -1,0 +1,4 @@
+---
+# host_vars/server02.yml
+# This file can contain variables/parameters for the server02
+# defined in your inventory file.
