@@ -146,7 +146,7 @@ ansbible -m setup -i inventory/myInventory
 For more documentation regarding playbooks, please have a look [here](http://docs.ansible.com/ansible/latest/playbooks.html)
 
 ```
-ansible-playbook -i inventory/myInventory
+ansible-playbook -i inventory/myInventory all.yml
 ```
 
 The below parameters can be used:
@@ -154,7 +154,7 @@ The below parameters can be used:
 - login password = "-k"
 
 ```
-ansible-playbook -k -K -i inventory/myInventory
+ansible-playbook -k -K -i inventory/myInventory all.yml
 ```
 
 ### Next steps
