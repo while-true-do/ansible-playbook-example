@@ -26,8 +26,8 @@ This playbook is based on some roles, which must be pulled in.
 
 - [while-true-do.time](https://galaxy.ansible.com/while-true-do/time/)
 - [while-true-do.chrony](https://galaxy.ansible.com/while-true-do/chrony/)
-- [while-true-do.yum](https://galaxy.ansible.com/while-true-do/hostname/)
-- [while-true-do.hostname](https://galaxy.ansible.com/while-true-do/yum/)
+- [while-true-do.hostname](https://galaxy.ansible.com/while-true-do/hostname/)
+- [while-true-do.yum](https://galaxy.ansible.com/while-true-do/yum/)
 
 
 ## Layout
