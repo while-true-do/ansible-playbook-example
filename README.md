@@ -1,6 +1,8 @@
 # Ansible Playbook: Example
 | An example playbook to show the usage of while-true-do roles.
 
+- Contains some example to see how ansible works.
+- Contains some example configuration.
 
 ## Motivation
 
@@ -16,9 +18,8 @@ git clone https://github.com/while-true-do/ansible-playbook-example.git
 
 ## Requirements
 
-- ansible
+- ansible on your local machine or admin host
 - at least one test machine with CentOS/RedHat installed
-
 
 ## Dependencies
 
@@ -28,7 +29,6 @@ This playbook is based on some roles, which must be pulled in.
 - [while-true-do.chrony](https://galaxy.ansible.com/while-true-do/chrony/)
 - [while-true-do.hostname](https://galaxy.ansible.com/while-true-do/hostname/)
 - [while-true-do.yum](https://galaxy.ansible.com/while-true-do/yum/)
-
 
 ## Layout
 
@@ -41,6 +41,8 @@ LICENSE.md                # This file contains the license.
 
 .editorconfig             # You should consider to use a plugin for editorconfig.
 .gitignore                # A file containing stuff, which is not pushed to git.
+
+ansible.cfg		  # An example ansible.cfg for your home or playbook directory.
 
 all.yml                   # There can be an all.yml or site.yml to integrate other.
 group1.yml                # Additional plays should be specified per inventory
@@ -63,6 +65,8 @@ host_vars/
   hostname1.yml           # If a host needs specific variables, put them here.
   hostname2.yml           # Hosts are defined in your inventory.
 
+# The roles are no longer maintained directly in the example.
+# By using "ansible-galaxy install ...", they will be installed in ~/.ansible/roles/ and usable from everywhere.
 roles/
   role01/                 # Here you will find the roles, which are in use.
   role02/                 # You can install additional ones from ansible galaxy.
@@ -159,7 +163,9 @@ ansible-playbook -k -K -i inventory/myInventory all.yml
 
 ### Next steps
 
-You should consider to have a look at the creation of roles. You can find our community skeleton [here](https://github.com/while-true-do/ansible-galaxy-skeleton).
+You should consider to have a look at the creation of roles. You can find our community skeleton [here](https://github.com/while-true-do/ansible-galaxy-skeleton). In the `ansible.cfg` you will also find a way to use the skeleton.
+
+Please also read: <https://docs.ansible.com/ansible/latest/installation_guide/intro_configuration.html>
 
 ## Contribute / Bugs
 
@@ -167,6 +173,7 @@ Thank you so much for considering to contribute. Every contribution helps us.
 We are really happy, when somebody is joining the hard work. Please have a look
 at the links first.
 
+-   [Code of Conduct](./docs/CODE_OF_CONDUCT.md)
 -   [Contribution Guidelines](./docs/CONTRIBUTING.md)
 -   [Create an issue or Request](https://github.com/while-true-do/ansible-playbook-example/issues)
 -   [See who was contributing already](https://github.com/while-true-do/ansible-playbook-example/graphs/contributors)
@@ -177,6 +184,6 @@ This work is licensed under a [BSD License](https://opensource.org/licenses/BSD-
 
 ## Author Information
 
-Blog: [blog.while-true-do.org](https://blog.while-true-do.org)
+Site: [while-true-do.org](https://while-true-do.org)
 
 Mail: [hello@while-true-do.org](mailto:hello@while-true-do.org)
